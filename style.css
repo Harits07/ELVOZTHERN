@@ -62,7 +62,9 @@ iframe { display: block; }
 
 
 
-
+.h2{
+  font-family: "Cinzel", sans-serif;
+}
 
 
 /* ══════════════════════════════════════
@@ -180,7 +182,15 @@ iframe { display: block; }
 
 }
 
-@media(max-width:480px){
+@media(max-width: 680px){
+  #navbar{padding: 15px 10px;}
+  .nav-links{gap:0;}
+  .nav-links li a{padding: 3px 3px; font-size:0.6rem ; }
+  .nav-brand a.brand-name{padding: 3px 3px; font-size: 0.8rem;}
+  #navbar.scrolled{padding: 15px 10px;}
+}
+
+@media(max-width:490px){
   #navbar{padding: 15px 5px;}
   .nav-links{gap:0;}
   .nav-links li a{padding: 3px 3px; font-size:0.55rem ; }
@@ -188,6 +198,23 @@ iframe { display: block; }
   #navbar.scrolled{padding: 15px 5px;}
 }
 
+
+@media(max-width: 460px){
+  #navbar{padding: 12px 5px;}
+  .nav-links{gap:0;}
+  .nav-links li a{padding: 3px 3px; font-size:0.45rem ; }
+  .nav-brand a.brand-name{padding: 3px 3px; font-size: 0.65rem;}
+  #navbar.scrolled{padding: 12px 5px;}
+}
+
+@media(max-width: 410px){
+  #navbar{padding: 10px 4px;}
+  .nav-links{gap:0;}
+  .nav-links li a{padding: 3px 3px; font-size:0.45rem ; }
+  .nav-brand a.brand-name{padding: 3px 2px; font-size: 0.55rem;}
+  #navbar.scrolled{padding: 8px 2px;}
+
+}
 
 
 
@@ -718,7 +745,7 @@ section:nth-of-type(even):not(#hero) {
       letter-spacing: 2px;
   }
 
-  .btn-primary {
+  .btn {
       padding: 12px 25px;
   }
 
@@ -794,9 +821,6 @@ section:nth-of-type(even):not(#hero) {
     margin-top: -150px;
   }
 
-  #tentang .container .intro-grid:nth-of-type(2){
-  }
-
   .intro-text h2,
   .feed-ks-text h2 {
       font-size: 1.8rem;
@@ -828,6 +852,7 @@ section:nth-of-type(even):not(#hero) {
 
   background: linear-gradient(45deg, #BF953F, #FCF6BA, #B38728);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1239,6 +1264,7 @@ section:nth-of-type(even):not(#hero) {
     font-size: 0.65rem;
   }
 
+
   .fp-item img {
     height: 180px;
   }
@@ -1399,7 +1425,6 @@ section:nth-of-type(even):not(#hero) {
 }
 
 /* Foto Grid */
-.foto-event-section { }
 
 .foto-grid {
   display: grid;
