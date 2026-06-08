@@ -735,6 +735,10 @@ section:nth-of-type(even):not(#hero) {
       justify-content: center;
   }
 
+  .hero-bg {
+    height: 100dvh;
+  }
+
   .hero h1 {
       font-size: 2.5rem;
       letter-spacing: 4px;
@@ -791,6 +795,13 @@ section:nth-of-type(even):not(#hero) {
 
 /* Small Mobile (<= 480px) */
 @media (max-width: 480px) {
+
+  .hero-bg {
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+  }
+
 
   .hero h1 {
       font-size: 2rem;

@@ -68,7 +68,7 @@
   const WHEEL_THRESHOLD = 10;
 
   window.addEventListener('wheel', function (e) {
-    if (isSnapping) { e.preventDefault(); return; }
+    // if (isSnapping) { e.preventDefault(); return; }
 
     const heroBottom   = heroSection.getBoundingClientRect().bottom;
     const heroTop      = heroSection.getBoundingClientRect().top;
