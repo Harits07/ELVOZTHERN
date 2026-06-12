@@ -25,6 +25,18 @@
   window.addEventListener('scroll', updateNavbar, { passive: true });
   updateNavbar(); // run once on load
 
+/*──────────────────────────────────────── 
+menu toggle for mobile
+──────────────────────────────────────── */
+  const menuToggle = document.getElementById('menu-toggle');
+  const navMobile = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navMobile.classList.toggle('active');
+  })
+
+
+
   /* ────────────────────────────────────────
      2. Hero image load → trigger zoom-out
   ──────────────────────────────────────── */
