@@ -286,3 +286,7 @@ menu toggle for mobile
   window.addEventListener('scroll', heroParallax, { passive: true });
 
 })();
+
+
+
+alert('Masih dalam tahap pengembangan');
