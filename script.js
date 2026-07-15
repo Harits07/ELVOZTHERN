@@ -289,4 +289,4 @@ menu toggle for mobile
 
 
 
-alert('Masih dalam tahap pengembangan');
+

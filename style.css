@@ -1313,6 +1313,54 @@ section:nth-of-type(even):not(#hero) {
   padding-top: 100px;
   background: var(--navy); }
 
+/*Buken*/
+.buken-section {
+  width: 100%;
+  height: 60vh;
+}  
+
+.buken-section .container{
+  display: flex;
+  align-items: center;
+  width: 60%;
+  height: 90%;
+}
+
+.buken-section .foto-buku{
+  margin-left: 50px;
+  margin-right: -10px;
+}
+
+.buken-section .desk{
+  margin-right: 50px;
+  margin-left: -10px;
+}
+
+.buken-section p{
+  font-size: 0.7rem;
+  font-family: "CINZEL", sans-serif;
+}
+
+.buken-section a{
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  font-family: "CINZEL", sans-serif;
+  color: var(--gold);
+  padding: 5px 30px;
+  border: 1px solid var(--gold);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.buken-section a:hover{
+  background: var(--gold);
+  color: var(--midnight);
+  transition: 0.4s;
+}
+
 /* Video */
 .video-section { margin-bottom: 80px; }
 
@@ -1502,6 +1550,24 @@ section:nth-of-type(even):not(#hero) {
   color: var(--gold-light);
   text-transform: uppercase;
 }
+
+
+@media (max-width: 768px) {
+  .buken-section .container{
+    display: block;
+  }
+
+  .buken-section .desk{
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .buken-section .desk{
+    margin-left: 50px;
+  }
+}
+
 
 
 
